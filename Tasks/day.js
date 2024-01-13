@@ -1,3 +1,5 @@
+"use strict";
+
 // Get day number
 
 let D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
