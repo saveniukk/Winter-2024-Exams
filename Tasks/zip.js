@@ -2,19 +2,19 @@
 
 // Zip two arrays, [1, 2] and [3, 4] -> [[1, 3], [2, 4]]
 
-const zip = (a = [], b = []) => {
+const zip = (firstArr = [], secondArr = []) => {
   let i = 0;
   j = 0;
-  for (x of b) {
-    CELL = [a[i++], x];
+  for (x of secondArr) {
+    CELL = [firstArr[i++], x];
     if (i < j) {
-      delete a[i++];
+      delete firstArr[i++];
     } else {
-      (() => (b[j++] = CELL))();
+      (() => (secondArr[j++] = CELL))();
     }
-    if (CELL[0] == undefined) b.length -= 1
+    if (CELL[0] == undefined) secondArr.length -= 1
   }
-  return b;
+  return secondArr;
 };
 
 module.exports = zip;
