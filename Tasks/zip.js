@@ -7,13 +7,10 @@ const zip = (firstArr = [], secondArr = []) => {
   let i = 0;
   let j = 0;
   for (const element of secondArr) {
-    const cell = [firstArr[i++], x];
-    if (i < j) {
-      delete firstArr[i++];
-    } else {
-      (() => (secondArr[j++] = cell))();
+    const cell = [firstArr[i++], element];
+    if (cell[0] !== undefined) {
+      result[j++] = cell;
     }
-    if (cell[0] == undefined) secondArr.length -= 1
   }
   return b;
 };
