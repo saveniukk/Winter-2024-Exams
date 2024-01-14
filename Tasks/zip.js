@@ -16,3 +16,4 @@ const zip = (firstArr = [], secondArr = []) => {
 };
 
 module.exports = zip;
+
