@@ -3,14 +3,14 @@
 // Filter array by type name
 
 const filterArrayByType = (array, type) => {
-  let remove = [];
+  let indicesToRemove = [];
   for (const element of array) {
     const indexOfElement = array.indexOf(element);
-    if (typeof array[indexOfElement] !== typeToRemove) {
-      remove.unshift(indexOfElement);
+    if (typeof array[indexOfElement] !== type) {
+      indicesToRemove.unshift(indexOfElement);
     }
   }
-  for (const indexOfElement of remove) array.splice(indexOfElement, 1);
+  for (const indexToRemove of indicesToRemove) array.splice(indexToRemove, 1);
   return array;
 };
 
