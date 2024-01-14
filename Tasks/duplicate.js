@@ -1,3 +1,5 @@
+'use strict';
+
 // Return an array without duplicates
 
 duplicate = (value, N) => {
@@ -12,3 +14,4 @@ duplicate = (value, N) => {
 };
 
 module.exports = duplicate;
+
