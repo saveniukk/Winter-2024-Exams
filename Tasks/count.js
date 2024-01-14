@@ -2,7 +2,7 @@
 
 // Sum all number values in dict
 
-count = (obj) => {
+const sumNum = (obj) => {
   sum = 0;
   keys = Object.keys(obj);
   keys.forEach((key) => {
@@ -12,4 +12,4 @@ count = (obj) => {
   return sum;
 };
 
-module.exports = count;
+module.exports = sumNum;
