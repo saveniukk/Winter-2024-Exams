@@ -2,24 +2,24 @@
 
 // Replace substring with newstr
 
-const replace = (str, substr, newstr) => {
-  if (substr === '') {
-    return str;
+const replace = (originalStr, targetSubstring, newSubstring) => {
+  if (targetSubstring === '') {
+    return originalStr;
   }
-  src = str;
-  res = '';
-  
+  let remainingStr = originalStr;
+  let result = '';
+
     do {
-      const _index = src.indexOf(substr);
-      if (_index === -1) {
-        return res + src;
+      const index = remainingStr.indexOf(targetSubstring);
+      if (index === -1) {
+        return result + remainingStr;
       } else {
-        const start = src.substring(0, _index);
-        src = src.substring(_index + substr.length, src.length);
-        res += start + newstr;
+        const start = remainingStr.substring(0, index);
+        remainingStr = remainingStr.substring(index + targetSubstring.length, remainingStr.length);
+        result += start + newSubstring;
       }
     } while (true);
 
 };
 
-module.exports = Replace;
+module.exports = replace;
