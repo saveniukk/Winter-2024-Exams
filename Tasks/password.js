@@ -1,3 +1,5 @@
+'use strict';
+
 // Generate random password
 
 let GeneratePassword = (alphabet, length) => {
