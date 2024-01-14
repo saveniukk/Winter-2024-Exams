@@ -5,15 +5,15 @@
 const intersection = (obj1, obj2) => {
   const obj1Keys = Object.keys(obj1);
   const result = [];
-  for (const attribute_name of   obj1Keys) {
-    if (obj1[attribute_name] === obj2[attribute_name]) {
-      obj2[attribute_name] = obj1[attribute_name];
+  for (const attributeName of obj1Keys) {
+    if (obj1[attributeName] === obj2[attributeName]) {
+      result.push(attributeName);
       
     } else {
-      delete obj1[attribute_name];
+      delete obj1[attributeName];
     }
   }
-  return obj1;
+  return result;
 };
 
 module.exports = intersection;
