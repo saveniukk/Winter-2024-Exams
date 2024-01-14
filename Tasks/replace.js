@@ -11,10 +11,13 @@ const replace = (originalStr, targetSubstring, newSubstring) => {
 
     while (remainingStr.includes(targetSubstring)) {
       const index = remainingStr.indexOf(targetSubstring);
-      
-        const start = remainingStr.substring(0, index);
-        remainingStr = remainingStr.substring(index + targetSubstring.length, remainingStr.length);
-        result += start + newSubstring;
+      const startLength = index;
+      const targetLength = targetSubstring.length;
+
+      const start = remainingStr.substring(0, startLength);
+      remainingStr = remainingStr.substring(index + targetLength);
+        
+      result += start + newSubstring;
       
     } 
     return result + remainingStr;
