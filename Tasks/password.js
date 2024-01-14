@@ -3,9 +3,7 @@
 // Generate random password
 
 const generatePassword = (alphabet, length) => {
-  if (length <= 0) {
-    return '';
-  }
+  if (length <= 0) return '';
 
   const indexMax = alphabet.length;
   let password = '';
