@@ -2,12 +2,13 @@
 
 // Replace substring with newstr
 
-const Replace = (str, substr, newstr) => {
+const replace = (str, substr, newstr) => {
   if (substr === '') {
     return str;
-  } else {
-    src = str;
-    res = '';
+  }
+  src = str;
+  res = '';
+  
     do {
       const _index = src.indexOf(substr);
       if (_index === -1) {
@@ -18,7 +19,7 @@ const Replace = (str, substr, newstr) => {
         res += start + newstr;
       }
     } while (true);
-  }
+
 };
 
 module.exports = Replace;
