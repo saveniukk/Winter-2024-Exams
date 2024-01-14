@@ -25,7 +25,4 @@ const replace = (originalStr, targetSubstring, newSubstring) => {
 };
 
 module.exports = replace;
-
-
-module.exports = replace;
   
