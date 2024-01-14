@@ -2,16 +2,17 @@
 
 // Filter array by type name
 
-Filter = (T, t) => {
-  remove = [];
-  for (C of T) {
-    x = T.indexOf(C);
-    if (typeof T[x] !== t) {
-      remove.unshift(x);
+const filterArrayByType = (array, type) => {
+  let remove = [];
+  for (const element of array) {
+    const indexOfElement = array.indexOf(element);
+    if (typeof array[indexOfElement] !== typeToRemove) {
+      remove.unshift(indexOfElement);
     }
   }
-  for (x of remove) T.splice(x, 1);
-  return T;
+  for (const indexOfElement of remove) array.splice(indexOfElement, 1);
+  return array;
 };
 
-module.exports = Filter;
+module.exports = filterArrayByType;
+ 
