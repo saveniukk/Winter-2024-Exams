@@ -1,3 +1,5 @@
+"use strict";
+
 // Filter array by type name
 
 Filter = (T, t) => {
