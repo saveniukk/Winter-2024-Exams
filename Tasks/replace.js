@@ -9,7 +9,7 @@ const replace = (originalStr, targetSubstring, newSubstring) => {
   let remainingStr = originalStr;
   let result = '';
 
-    while (true) {
+    while (remainingStr.includes(targetSubstring)) {
       const index = remainingStr.indexOf(targetSubstring);
       
         const start = remainingStr.substring(0, index);
@@ -17,6 +17,7 @@ const replace = (originalStr, targetSubstring, newSubstring) => {
         result += start + newSubstring;
       
     } 
+    return result + remainingStr;
 
 };
 
