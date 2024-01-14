@@ -4,13 +4,8 @@
 
 const duplicate = (value, amount) => {
   if (amount <= 0) return [];
-  else {
-    const res = [];
-    for (let i = 0; i < amount; i++) {
-      res[i] = value;
-    }
-    return res;
-  }
+
+  return Array.from({ length: amount }, () => value);
 };
 
 module.exports = duplicate;
