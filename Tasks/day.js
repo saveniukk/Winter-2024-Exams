@@ -5,7 +5,6 @@
 const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const parseDay = (str) => {
-  //const lowercaseStr = str.toLowerCase();
   for (const day of days){
     const lowercaseDay = day.toLowerCase();
 
@@ -17,3 +16,4 @@ const parseDay = (str) => {
 };
 
 module.exports = parseDay;
+
