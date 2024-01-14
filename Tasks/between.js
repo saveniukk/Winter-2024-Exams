@@ -18,3 +18,4 @@ const getValueBetween = (str, prefix, suffix) => {
 };
 
 module.exports = getValueBetween;
+ 

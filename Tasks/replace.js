@@ -1,13 +1,14 @@
-"use strict";
+'use strict';
 
 // Replace substring with newstr
 
 const replace = (originalStr, targetSubstring, newSubstring) => {
-  if (targetSubstring === "" || !originalStr.includes(targetSubstring)) {
+  if (targetSubstring === '' || !originalStr.includes(targetSubstring)) {
     return originalStr;
   }
+
   let remainingStr = originalStr;
-  let result = "";
+  let result = '';
 
   while (remainingStr.includes(targetSubstring)) {
     const index = remainingStr.indexOf(targetSubstring);
@@ -19,8 +20,12 @@ const replace = (originalStr, targetSubstring, newSubstring) => {
 
     result += start + newSubstring;
   }
+
   return result + remainingStr;
 };
 
 module.exports = replace;
- 
+
+
+module.exports = replace;
+  

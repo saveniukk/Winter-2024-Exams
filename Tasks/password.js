@@ -8,7 +8,7 @@ const generatePassword = (alphabet, length) => {
   const indexMax = alphabet.length;
   let password = '';
 
-   for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i++) {
     const randomIndex = Math.floor(Math.random() * indexMax);
     password += alphabet[randomIndex];
   }
@@ -17,3 +17,4 @@ const generatePassword = (alphabet, length) => {
 };
 
 module.exports = generatePassword;
+
