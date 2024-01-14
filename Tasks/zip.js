@@ -12,7 +12,7 @@ const zip = (firstArr = [], secondArr = []) => {
       result[j++] = cell;
     }
   }
-  return b;
+  return result;
 };
 
 module.exports = zip;
