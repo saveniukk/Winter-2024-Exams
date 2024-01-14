@@ -5,7 +5,7 @@
 const zip = (firstArr = [], secondArr = []) => {
   let result = [];
   let i = 0;
-  j = 0;
+  let j = 0;
   for (x of secondArr) {
     CELL = [firstArr[i++], x];
     if (i < j) {
