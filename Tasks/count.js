@@ -18,3 +18,4 @@ const sumNum = (obj) => {
 };
 
 module.exports = sumNum;
+
