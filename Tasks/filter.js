@@ -15,3 +15,4 @@ const filterArrayByType = (array, type) => {
 };
 
 module.exports = filterArrayByType;
+
