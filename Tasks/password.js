@@ -9,7 +9,9 @@ const generatePassword = (alphabet, length) => {
   let password = '';
 
   for (let i = 0; i < length; i++) {
-    const randomIndex = Math.floor(Math.random() * indexMax);
+    const randomFloat = Math.random();
+    const scaledRandom = randomFloat * indexMax;
+    const randomIndex = Math.floor(scaledRandom);
     password += alphabet[randomIndex];
   }
 
